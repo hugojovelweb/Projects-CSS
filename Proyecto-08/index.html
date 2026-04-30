@@ -65,7 +65,11 @@
         </main>
     </div>
     <footer class="footer">
-        <p>&copy; 2024 Proyecto 08. All rights reserved <strong>By Hugo Jovel Web.</strong></p>
+       &copy; <span id="currentYear"></span> Proyecto 08. All rights reserved <strong>By Hugo Jovel Web.</strong></p>
+    
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
     </footer>
 </body>
 </html>
