@@ -1,0 +1,19 @@
+body{
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+}
+
+.articulo{
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+    margin: 20px;
+    padding: 20px;
+
+    float: left;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
