@@ -49,7 +49,7 @@ Pregúntame libremente por redes o issues.
 
 ⭐ Dame una estrella si este repo te ayuda a aprender o inspirarte.
 
-🛠️ Tecnologías usadas
+🛠️ Tecnologías usadas:
 HTML5 semántico
 
 CSS3 (Flex, Grid, Animaciones, Variables CSS)
