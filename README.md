@@ -36,7 +36,7 @@
 
 Los proyectos aquí son demostrativos. Si necesitas una versión personalizada, puedo crearla por encargo. 
 
-📚 Para estudiantes y amigos
+📚 Para estudiantes y amigos:
 Si estás aprendiendo CSS:
 
 Clona o descarga cualquier proyecto.
