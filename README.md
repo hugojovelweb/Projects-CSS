@@ -34,6 +34,7 @@
 🌐 Portafolio web: https://www.hugojovelweb.tech/
 🐦 LinkedIn: https://www.linkedin.com/in/hugo-jovel-web-b882b82a8/
 
+
 Los proyectos aquí son demostrativos. Si necesitas una versión personalizada, puedo crearla por encargo. 
 
 📚 Para estudiantes y amigos:
