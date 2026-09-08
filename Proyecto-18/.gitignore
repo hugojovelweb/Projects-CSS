@@ -1,0 +1,32 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores / IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Dependencias y builds (por si en el futuro usas npm, Sass, Vite, Webpack, etc.)
+node_modules/
+dist/
+build/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Variables de entorno / secretos
+.env
+.env.local
+
+# Archivos temporales
+*.tmp
+*.swp
+*.bak
+
+# Archivos comprimidos de librerías descargadas (se pueden regenerar)
+assets/fonts/*.zip
