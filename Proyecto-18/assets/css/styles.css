@@ -1,0 +1,283 @@
+   /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .layout {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .layout__card {
+            background-color: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 380px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .layout__card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card__container-img {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+        }
+        
+        .card__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .layout__card:hover .card__img {
+            transform: scale(1.05);
+        }
+        
+        .card__content {
+            padding: 24px;
+        }
+        
+        .card__title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #2c3e50;
+            line-height: 1.3;
+        }
+        
+        .card__description {
+            color: #7f8c8d;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+        
+        .card__user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #f1f1f1;
+            padding-top: 20px;
+        }
+        
+        .user__info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .user__container-img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #e8e8e8;
+        }
+        
+        .user__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .user__container-name {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .user__name {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #2c3e50;
+        }
+        
+        .user__date {
+            font-size: 0.8rem;
+            color: #95a5a6;
+        }
+        
+        .user__icon {
+            color: #3498db;
+            font-size: 1.3rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .user__icon:hover {
+            color: #2980b9;
+            animation: pulse 0.5s;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Indicador de solución */
+        .solution-indicator {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #27ae60;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            z-index: 1000;
+        }
+        
+        .solution-indicator i {
+            font-size: 1.1rem;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Codigo Viejo */
+/* html{
+    font-size: 10px;
+}
+
+body{
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+.layout{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8eded;
+}
+.layout__card{
+    display: flex;
+    flex-direction: row;
+    max-width: 86rem;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.card__container-img{
+   flex-basis: 40%;
+   height: 100%;
+}
+.card__content{
+    flex-basis: 60%;
+    height: 100%;
+    padding: 3rem 4rem;
+}
+.card__title{
+    font-size: 2rem;
+    line-height: 1.4;
+    color: #3f7080;
+    margin-bottom: 1.5rem;
+}
+.card__description{
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #9897a5;
+    margin-bottom: 2rem;
+}
+.card__user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.user__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+.user__container-name{
+    display: flex;
+    flex-direction: column;
+}
+.user__name{
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #3f7080;
+    font-weight: 600;
+}
+.user__date{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    color: #9897a5;
+    font-weight: 400;
+}
+/* .user__container-img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+} */
+/* Termina Codigo Viejo */
+
+/* Mezcla de Codigo Viejo y Nuevo */
+.user__container-img{
+    width: 5rem;
+    height: 5rem;   
+}
+.user__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;   
+}
+.user__icon{ 
+    background-color: #00A7DB;   
+    color: white;
+    padding: 1.5rem;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+
+/*     
+    text-align: center;
+    line-height: 4rem; */
+    transition: all 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user__icon:hover{
+    background-color: darken(#00A7DB, 10%);
+} 
